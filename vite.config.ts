@@ -1,17 +1,12 @@
 import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig } from 'vite';
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
-      resolve: {
+export default defineConfig({
+    // Add this 'base' property
+    base: '/wavelength/', // This should match your repo name preceded and followed by slashes
+    resolve: {
         alias: {
-          '@': path.resolve(__dirname, '.'),
+            '@': path.resolve(__dirname, '.'),
         }
-      }
-    };
+    }
 });
