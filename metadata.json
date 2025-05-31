@@ -1,0 +1,5 @@
+{
+  "name": "Wavelength Game",
+  "description": "A React and Tailwind CSS version of the Wavelength board game, modernized from a p5.js implementation. Players try to guess a target location on a spectrum based on a clue.",
+  "requestFramePermissions": []
+}
