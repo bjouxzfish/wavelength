@@ -74,7 +74,7 @@ const App: React.FC = () => {
           <Button onClick={() => { resetGame(); getNewClue(); }} variant="primary" aria-label="Start New Game (N)">New Game (N)</Button>
           <Button onClick={closeActualLid} variant="secondary" aria-label="Close Lid (C)">Close Lid (C)</Button>
           <Button onClick={openActualLid} variant="secondary" aria-label="Open Lid (A)">Open Lid (A)</Button>
-          <Button onClick={getNewClue} variant="secondary" aria-label="Get New Clue (K)">New Clue (K)</Button>
+          <Button onClick={getNewClue} variant="secondary" aria-label="Get New Concept (K)">New Concept (K)</Button>
         </div>
       </header>
 
