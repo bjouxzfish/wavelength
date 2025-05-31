@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="text-center text-xs text-slate-500 pt-3 border-t border-slate-700">
-          Modernized with React & Tailwind CSS.
+          May the Force be with you!
         </div>
       </div>
     </footer>
